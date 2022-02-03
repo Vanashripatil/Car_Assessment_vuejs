@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavBar  :user="user" />
+    <div class="container">
+    <router-view v-on:addItemToCart="addItemToCart" :cart="cart" v-on:removeItemFromCart="removeItemFromCart"></router-view>
+    </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from './components/NavBar.vue' 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  data(){
+    return{
+      user: null,
+      cart: [],
+    }
+  },
+  components:{
+    NavBar,
+  },
+  mounted()
+   {
+      this.user = localStorage.getItem('user-info');
+      console.warn(this.user);
+   },
+   methods: {
+    addItemToCart(cars) {
+      this.cart.push(cars);
+    },
+    removeItemFromCart(cars) {
+      this.cart.splice(this.cart.indexOf(cars), 1);
+    },
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+

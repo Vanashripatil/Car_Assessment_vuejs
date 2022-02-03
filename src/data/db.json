@@ -1,0 +1,94 @@
+{
+  "user": [
+    {
+      "username": "vanashri",
+      "password": "vana@12",
+      "gender": "Female",
+      "country": "India",
+      "id": 1
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "gender": "Female",
+      "country": "India",
+      "id": 2
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "title": "Honda Civic 2018",
+      "price": 123,
+      "color": "Grey",
+      "gearbox": 4,
+      "fuel": "Diesel",
+      "brand": "Honda",
+      "path": "car1.jpg",
+      "gear": "Manual",
+      "Mileage": "7.3kms"
+    },
+    {
+      "id": 2,
+      "title": "Land Rover Evoque 2016",
+      "price": 223,
+      "color": "Grey",
+      "gearbox": 6,
+      "fuel": "Diesel",
+      "brand": "Land Rover",
+      "path": "car2.jpg",
+      "gear": "Automatic",
+      "Mileage": "7.3kms"
+    },
+    {
+      "id": 3,
+      "title": "Mercedes Benz SLS 2019",
+      "price": 203,
+      "color": "Red",
+      "gearbox": 5,
+      "fuel": "CNG",
+      "brand": "Mercedes",
+      "path": "car3.jpg",
+      "gear": "Manual",
+      "Mileage": "7.3kms"
+    },
+    {
+      "id": 4,
+      "title": "Audi A6 2018",
+      "price": 190,
+      "color": "Grey",
+      "gearbox": 5,
+      "fuel": "CNG",
+      "brand": "Audi",
+      "path": "car4.jpg",
+      "gear": "Automatic",
+      "Mileage": "7.3kms"
+    },
+    {
+      "id": 5,
+      "title": "Jaguar XF 2019",
+      "price": 200,
+      "color": "White",
+      "gearbox": 6,
+      "fuel": "CNG",
+      "brand": "Jaguar",
+      "path": "car5.jpg",
+      "gear": "Automatic",
+      "Mileage": "7.3kms"
+    },
+    {
+      "id": 6,
+      "title": "BMW E-1 2018",
+      "price": 123,
+      "color": "Grey",
+      "gearbox": 6,
+      "fuel": "Diesel",
+      "brand": "BMW",
+      "path": "car6.jpg",
+      "gear": "Manual",
+      "Mileage": "7.3kms"
+    }
+  ],
+  "cart": [
+  ]
+}
